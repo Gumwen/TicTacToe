@@ -10,8 +10,8 @@ The game mechanics are defined using propositions that represent each cell of th
 
 ### Propositions
 
-- **H(i, j):** The human has marked cell (i, j).
-- **C(i, j):** The computer has marked cell (i, j).
+- **H(i, j):** The human has played in cell (i, j).
+- **C(i, j):** The computer has played in cell (i, j).
 - **E(i, j):** The cell (i, j) is empty.
 - **W<sub>H</sub>:** The human wins.
 - **W<sub>C</sub>:** The computer wins.
