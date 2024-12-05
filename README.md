@@ -90,6 +90,52 @@ W<sub>H</sub> (the human wins).
 
 ---
 
+#### Modus Tollens
+
+If \( p → q \) is true and \( q \) is false, then \( p \) must also be false.
+
+**Example**:  
+If:  
+\( C(0, 0) ∧ C(0, 1) ∧ E(0, 2) → W<sub>C</sub> \)  
+And:  
+\( ¬W<sub>C</sub> \) (the computer doesn't win),  
+
+Then:  
+\( E(0, 2) \) is false (the cell (0, 2) must be occupied, meaning the computer does not have a winning move).
+
+---
+
+#### Disjunctive Syllogism
+
+If \( p ∨ q \) is true, and \( ¬p \) is true, then \( q \) must be true.
+
+**Example**:  
+If:  
+The human can win in row 0 or row 1,  
+And:  
+\( ¬E(0, 2) \) (the human cannot play in that cell),  
+
+Then:  
+The human player must play in row 1 to be able to win.
+
+---
+
+#### Hypothetical Syllogism
+
+If \( p → q \) and \( q → r \) are both true, then \( p → r \) is also true.
+
+**Example**:  
+If:  
+Playing \( H(1, 1) \) makes winning possible,  
+And:  
+Winning at \( H(2, 2) \) is possible from that position,  
+
+Then:  
+Moving to \( H(1, 1) \) guarantees a potential win for the human player.
+
+
+---
+
 ### Sample Playthrough
 
 #### Initial Board
