@@ -13,12 +13,12 @@ def display_board(board):
 def main():
     board = initialize_board()
     while True:
-        first_player = input("Are you 'X' or 'O'?")
+        first_player = input("Are you 'X' or 'O'?").strip().upper
         if first_player in ["X", "O"]:
             break
         print("Invalid symbol! you have to choose either 'X' or 'O'.")
     human_symbol = first_player
-    computer_symbol = "O" if human_symbol = "X" else "X"
+    computer_symbol = "O" if human_symbol == "X" else "X"
     
     current_player = "Human"
 
