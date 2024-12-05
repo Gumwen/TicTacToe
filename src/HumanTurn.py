@@ -1,9 +1,9 @@
-def human_turn(board):
+def human_turn(board, symbol):
     while True:
         move = input("Enter your move (row and column): ")
         row, col = map(int, move.split())
         if board[row][col] == " ":
-            board[row][col] = "X"
+            board[row][col] = symbol
             break
         else:
-            print("Cell is already occupied. Try again.")
+            print("Cell is already occupied. Choose another cell.")
