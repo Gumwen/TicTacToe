@@ -13,7 +13,7 @@ def display_board(board):
 def main():
     board = initialize_board()
     while True:
-        first_player = input("Are you 'X' or 'O'?").strip().upper
+        first_player = input("Are you 'X' or 'O'?").strip().upper()
         if first_player in ["X", "O"]:
             break
         print("Invalid symbol! you have to choose either 'X' or 'O'.")
@@ -29,7 +29,7 @@ def main():
         else:
             computer_turn(board, computer_symbol)
         
-        result = check_win_or_draw(board)
+        result = check_win_or_draw(board, human_symbol)
         if result:
             print(result)
             break
